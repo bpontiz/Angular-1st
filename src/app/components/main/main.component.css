@@ -1,0 +1,42 @@
+section {
+    position: absolute;
+    top: 60px;
+    left: 20vw;
+    width: calc(100vw - 20vw);
+    height: calc(100vh - 60px);
+    padding: .25rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    overflow-y: scroll;
+
+    & div {
+        border: 1px solid black;
+        height: 350px;
+        padding: .25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        & h2 {
+            font-size: 20px;
+        }
+
+        & img {
+            width: 100%;
+            padding: 1rem 0;
+        }
+
+        & p {
+            font-size: 14px;
+            padding: 1rem 0;
+        }
+
+        & button {
+            width: 50%;
+            align-self: center;
+        }
+    }
+}
